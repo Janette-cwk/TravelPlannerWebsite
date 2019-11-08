@@ -1,0 +1,356 @@
+*, html, body{
+    margin:0;
+    padding:0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body{
+    height: 3100px;
+}
+
+/*header*/
+header{
+    background-color: snow;
+    height: 112px;
+    line-height: 112px;
+    position: fixed;
+    /*Bringing the layer at the top*/
+    z-index:1;
+    width: 100%;
+}
+.secondary{
+    background-color: snow;
+    box-shadow: 0px 0px 17px 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+}
+
+header nav{
+    float: right;
+}
+
+.logo img{
+    margin-top: 1px;
+}
+header nav ul li a{
+    padding-right: 30px;
+    font-weight: bold;
+    color: grey;
+    transition: all 0.3s ease-in;
+}
+.slider a, header .btn{
+    padding: 10px 40px;
+    background-color: #f29898;
+    font-weight: bold;
+    color: black;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color:#f29898;
+}
+
+
+/*slider*/
+.img1{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/skyline.jpg);
+    background-size: 100% 100%;
+}
+.img2{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/beach.jpg);
+    background-size:100% 100%;
+}
+.slider, .slider ul, .slider ul li{
+    height: 800px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.slider h2, .get-started h2{
+    font-weight: bold;
+    margin-top: 300px;
+}
+.slider a, header .btn{
+    padding: 10px 40px;
+    background-color: #f29898;
+    font-weight: bold;
+    color: black;
+}
+.slider a:hover{
+    opacity: 0.7;
+}
+input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    background-color: rgb(87, 87, 87);
+}
+label{
+    width: 200px;
+    height:40px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/*How it works page*/
+.how-it-works{
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+.sub-heading{
+    position: relative;
+    margin-bottom: 75px;
+}
+.sub-heading:before{
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width:6%;
+    height: 1px;
+    background-color: #f35353;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.sub-heading:hover:before{
+    width: 25%;
+    margin-left: -138px;
+}
+.sub-heading:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background-color: #cecaca;
+}
+.sub-heading p{
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+ol, .step1-block p{
+    text-align: left;
+
+}
+.step1-block, .step2-block, .step3-block, .preference-block{
+    position: relative;
+    background: snow;
+    margin: 50px 0px 0px;
+    padding: 70px 35px 40px;
+    border-radius: 4px;
+}
+.step1-block:hover, .step2-block:hover, .step3-block:hover,.step1-block:active, .step2-block:active, .step3-block:active{
+    background: #ffd7d7;
+    transition: 0.3s ease;
+}
+.step-icon{
+    position: absolute;
+    top: -31px;
+    left:50%;
+    margin-left: -31px;
+}
+.fa{
+    width:50px;
+    height:50px;
+    line-height:2;
+    background: #ffd7d7;
+    color: rgb(104, 104, 104);
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 8px #ffe7e7;
+}
+.sample-icon .fa, .get-started .fa, .user-icon .fa{
+    box-shadow: none;
+    background: none;
+}
+.user-icon .fa{
+    position: left;
+    padding: 5px;
+    margin-left: -15px;
+}
+.step1-block:hover .fa, .step2-block:hover .fa, .step3-block:hover .fa,.step1-block:active .fa, .step2-block:active .fa, .step3-block:active.fa{
+    background:white;
+}
+.how-it-works h2, .about-us h2, .sample-plan h2, .contact-us h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/*About us page*/
+.about-us, .contact-us{
+    height: 800px;
+}
+.about-us, .contact-us, #result{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/skyline.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 90px 0;
+}
+.title h2, .about-us p, .contact-us h2, .contact-info{
+    color: white;
+}
+.single-about h3{
+    color:white;
+}
+.single-about{
+    padding: 30px 0;
+    text-align:center;
+    border-bottom: 1px solid #f29898;
+}
+.about-us-block{
+    position: relative;
+}
+
+/*Testimonials page*/
+.sample-plan{
+    height: 800px;
+    background-color: snow;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.sample-plan .carousel-indicators{
+    bottom:-60px;
+}
+.sample-plan .carousel-indicators li{
+    background-color: rgba(70,70,70,.25);
+}
+.sample-plan .carousel-indicators li.active{
+    background-color: black;
+}
+
+/*Contact us page*/
+.mapouter {
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}
+.contact-info{
+    text-align: left;
+    padding: 100px 0;
+    margin-left: 250px;
+}
+
+/*Footer*/
+.footer{
+    height: 35px;
+    width: 100%;
+    bottom: 0;
+    background-color: snow;
+    color: grey;
+    text-align: right;
+} 
+
+/*Get started page*/
+.get-started h2{
+    font-weight: bold;
+    margin-top: 180px;
+}
+
+.preference-block{
+    height: 400px;
+    text-align: left;
+    box-shadow: 0px 0px 17px 0px;
+}
+
+.preference-block h3{
+    margin-top: 5px;
+}
+
+.preference-block input{
+    margin: .4rem 0;
+    background-color: white;
+}
+.preference-block #stop-radio, .preference-block #purpose-radio, .preference-block #flight-radio{
+    background:none;
+}
+
+.preference-block:hover{
+    background: #f3c8c8;
+}
+.preference-block .slider{
+    height: 150px;
+}
+#rangevalue{
+    font-size: 15pt;
+    text-align: center;
+}
+.btn-generate{
+    float: right;
+    margin-top: 20px;
+    color: black;
+    background: #f29898;
+    width: 200px;
+}
+#result{
+    margin-top: 30px;
+    height: 2000px;
+}
+
+/*Media queries*/
+/*For tablets*/
+@media (max-width:768px) {
+    header nav ul li a{
+       padding: 5px;
+       font-size: 10px;
+    }
+    #budget{
+        width: 83px;
+    }
+    .mapouter {
+        height: 200px;
+        width: 100%;
+    }
+    .gmap_canvas {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+/*For mobile phones*/
+@media (max-width: 425px){
+    header nav ul li a{
+        display: none;
+    }
+    .btn-log-in{
+        margin-right: 10px;
+    }
+    #user-login{
+        padding: 10px;
+    }
+    .about-us, .contact-us{
+        padding: 50px 0;
+    }
+    .single-about{
+        padding: 15px 0;
+    }
+    .mapouter {
+        height: 200px;
+        width: 60%;
+    }
+    .gmap_canvas {
+        height: 200px;
+        width: 60%;
+    }
+}

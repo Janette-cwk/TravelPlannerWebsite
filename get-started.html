@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Janette Chow">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <title>Get Started</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/caroufredsel.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!--class "container" to make the website responsive-->
+        <div class="container">
+            <!--class "row" is defined in the bootstrap-->
+            <div class="row">
+                <a href="" class="logo"><img src="img/Itinerary-logo.png" alt="Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#steps">HOW IT WORKS</a></li>
+                        <li><a href="index.html#about-us">ABOUT US</a></li>
+                        <li><a href="index.html#sample-plan">TESTIMONIALS</a></li>
+                        <li><a href="index.html#contact-us">CONTACT US</a></li>
+                        <li><a href="" class="btn btn-log-in" id="user-login"><span class="user-icon"><i class="fa fa-user-circle fa-2x"></i></span>HI
+                                KALVIN!</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--"Get Started" page-->
+    <section class="get-started" id="get-started">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Let Us Know Your Travel Preference</h2>
+                    <div class="sub-heading">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="preference-block">
+                        <h3>Choose the Date:</h3>
+                        <input  type="date" id="start" name="trip-start" value="2019-01-29" min="2019-01-01" max="2019-12-31">
+                        <input type="date" id="end" name="trip-end" value="2019-01-30" min="2019-01-01" max="2019-12-31">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="preference-block">
+                        <h3>Choose the flight duration you prefer:</h3>
+                        <input role="radio" class="flight-radio" type="radio" name="duration" value="6" checked>Less than 6 hours<br>
+                        <input role="radio" class="flight-radio" type="radio" name="duration" value="10"> Less than 10 hours<br>
+                        <input role="radio" class="flight-radio" type="radio" name="duration" value="20"> Less than 20 hours<br>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="preference-block">
+                        <h3>Enter the budget per day:</h3>
+                        $ <input role="textbox" id="budget" type="number"> per day
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="preference-block">
+                        <h3>Choose the Weather (°C) you prefer:</h3>
+                        <div class="slidecontainer">
+                            <input role="slider" id="weather-slider" type="range" min="-10" max="50" value="20" class="slider" onchange="rangevalue.value=value"></input>
+                            <output id="rangevalue">20°C</output>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="preference-block">
+                        <h3>Select the main purpose of this trip:</h3>
+                        <input role="radio" class="purpose-radio" type="radio" name="purpose" value="food" checked> Food Travel<br>
+                        <input role="radio" class="purpose-radio" type="radio" name="purpose" value="sightseeing"> Sightseeing<br>
+                        <input role="radio" class="purpose-radio" type="radio" name="purpose" value="shopping"> Shopping<br>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="preference-block">
+                        <h3>How many cities do you want to visit for this trip?</h3>
+                        <input role="radio" class="stop-radio" type="radio" name="cities" value="1" checked>1 city<br>
+                        <input role="radio" class="stop-radio" type="radio" name="cities" value="2-3"> 2 to 3 cities<br>
+                        <input role="radio" class="stop-radio" type="radio" name="cities" value="3-5"> 3 to 5 cities<br>
+                        <input role="radio" class="stop-radio" type="radio" name="cities" value="more"> More<br>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="btn-row">
+                <a class="btn btn-generate" id="btn-generate">GENERATE</a>
+            </div>
+        </div>
+        <div id="result"></div>
+    </section>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Itinerary</title>
+    <meta name="author" content="Janette Chow">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <!--citation: https://github.com/Codeinwp/carouFredSel-jQuery/blob/master/jquery.carouFredSel-6.2.1-packed.js-->
+    <script src="js/caroufredsel.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!--Link to css stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <!--class "container" to make the website responsive-->
+        <div class="container">
+            <!--class "row" is defined in the bootstrap-->
+            <div class="row">
+                <a href="index.html#slider-carousel" class="logo"><img src="img/Itinerary-logo.png" alt="Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#steps">HOW IT WORKS</a></li>
+                        <li><a href="index.html#about-us">ABOUT US</a></li>
+                        <li><a href="index.html#sample-plan">TESTIMONIALS</a></li>
+                        <li><a href="index.html#contact-us">CONTACT US</a></li>
+                        <li><a href="get-started.html" class="btn btn-log-in">LOG IN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Home Page-->
+    <section class="slider">
+        <ul class="slider-carousel" id="slider-carousel">
+            <li class="img1">
+                <h2>YOUR DREAM VACATION STARTS HERE.</h2>
+                <p><br>Do not have a specific destination? — Don't worry! <br>Get recommendations of your dream trip for free.</p><br>
+                <a href="get-started.html" class="btn btn-full" id="btn-getStarted">Get Started</a>
+            </li>
+            <li class="img2">
+                <h2>New to Itinerary?</h2>
+                <p>Sign up for an account for free</p>
+                <form>
+                    <label for="name" required="required">First name: </label><input role="textbox" id="name" type="text"><br>
+                    <label for="email" required="required">Email Address: </label><input role="textbox" id="email" type="email"><br>
+                    <label for="password" required="required">Password: </label><input role="textbox" id="password" type="password"><br><br>
+                </form>
+                <a href="#" class="btn btn-full">Sign Up</a>
+            </li>
+        </ul>
+    </section>
+    <!--"How it works" page-->
+    <section class="how-it-works" id="steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>HOW IT WORKS</h2>
+                    <div class="sub-heading">
+                        <p>Let us show you the process of your dream trip coming true</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="step1-block">
+                        <span class="step-icon"><i class="fa fa-bookmark fa-3x"></i></span>
+                        <h3>Step 1: Select your travel prefrence</h3>
+                        <p> Choose: </p>
+                        <ol>
+                            <li>The date of your trip</li>
+                            <li>Your budget</li>
+                            <li>Flight duration that you prefer</li>
+                            <li>Weather that you prefer</li>
+                            <li>The purposes of this trip (Sightseeing, Food Travel or Shopping)</li>
+                            <li>How many places you want to stop by during this trip</li>
+                        </ol>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="step2-block">
+                        <span class="step-icon"><i class="fa fa-bookmark fa-3x"></i></span>
+                        <h3>Step 2: The recommendation of your dream trip is generating</h3>
+                        <p> <br><br><br>We will recommend the destinations according to all the prefrence that you
+                            told us.<br><br><br><br></p>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="step3-block">
+                        <span class="step-icon"><i class="fa fa-bookmark fa-3x"></i></span>
+                        <h3>Step 3: Loving it?</h3>
+                        <p> <br><br><br>Are you happy with the recommendations that we created for you? Let us know by
+                            clicking the "Generate" button.
+                            If you are not satisfy with the plan, click the "Regenerate" button.<br><br><br><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--"About us" page-->
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2>ABOUT US</h2>
+                    <div class="sub-heading">
+                        <p>Let us show you the process of your dream trip coming true</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-us-block">
+                    <div class="single-about">
+                        <span class="about-icon"><i class="fa fa-check-circle-o fa-3x"></i></span>
+                        <h3>Our Mission</h3>
+                        <p>We build your itinerary exactly how our you want it for free. </p>
+                    </div>
+                    <div class="single-about">
+                        <span class="about-icon"><i class="fa fa-check-circle-o fa-3x"></i></span>
+                        <h3>Our Story</h3>
+                        <p>Have you ever experienced a moment that you would like to travel during your vacation,
+                            but not sure about where to go? Whenever people are planning for a vacation online, the
+                            first question they always get is "Where to?" We figured there should be a platform for
+                            people who do not have a specific destination that they want to go, and here you have
+                            it — Itinerary helps you plan your trip no matter you have or have not a specific
+                            destination</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--"Testimonials" page-->
+    <section class="sample-plan" id="sample-plan">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>TESTIMONIALS</h2>
+                    <div class="sub-heading">
+                        <p>Discover our users' comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div id="carousel-sample" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-sample" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-sample" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <span class="sample-icon"><i class="fa fa-user-circle fa-3x"></i></span>
+                            <h3>Kalvin's Japan Trip</h3>
+                            <p>
+                                Duration: 7 days<br>
+                                Destination: Tokyo, Osaka<br>
+                                Purpose: Food travel<br>
+                                Accommodation: Airbnb<br><br>
+
+                                "The recommendation that Itinerary gave me was fantastic.<br>
+                                It included recommended plane ticket, place to stay,<br>
+                                restaurants and sightseeing spots in Japan. Everything Itinerary <br>
+                                recommended was great, the restaurants have good food,<br>
+                                plane ticket and the Airbnb were both affordable. It definitely <br>
+                                saved me a lot of time for planning my trip." — Kalvin
+                            </p>
+                        </div>
+                        <div class="item text-center">
+                            <span class="sample-icon"><i class="fa fa-user-circle fa-3x"></i></span>
+                            <h3>Miranda's Family Trip</h3>
+                            <p>
+                                Duration: 5 days<br>
+                                Destination: Hong Kong<br>
+                                Purpose: Food travel, Sightseeing<br>
+                                Accommodation: Airbnb<br><br>
+
+                                "My family had a lot of fun during this trip. We love <br>
+                                street food and we were exicited to try out some authentic <br>
+                                dim sum. The recommendations from Itinerary brought <br>
+                                us to a lot of local authentic restaurants and famous tourist <br>
+                                sites which we enjoyed." — Miranda
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Us page-->
+    <section class="contact-us" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="contact text-center">
+                    <h2>CONTACT US</h2>
+                    <div class="sub-heading">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="contact-us-block">
+                        <div class="contact-info">
+                            <h3>Phone</h3>
+                            <p>+1 (880)-532-2001 </p>
+                            <h3>Email</h3>
+                            <p>itinerary@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=seattle&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                            <a href="https://www.pureblack.de"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            Copyright &copy; 2019 Itinerary</div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
